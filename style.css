@@ -3,17 +3,29 @@ html, body{
     height: 100%;
 }
 
+#header{
+    display: flex;
+    justify-content: center;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 #container{
     display: grid;
     width: 25em;
     height: 25em;
     margin: 0;
     border: 0.03em solid black;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    --grid-template-columns: repeat(16, 1fr);
+    --grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: var(--grid-template-columns);
+    grid-template-rows: var(--grid-template-rows);
 }
 
 .grid{
     border: 0.03em solid black;
     padding: 0px;
 }
+
