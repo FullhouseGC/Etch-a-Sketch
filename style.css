@@ -1,11 +1,13 @@
 html, body{
     margin: 0;
     height: 100%;
+    background-color: rgb(19, 18, 18);
 }
 
 #header{
     display: flex;
     justify-content: center;
+    color: rgb(226, 247, 214);
 }
 #main{
     display: flex;
@@ -17,7 +19,7 @@ html, body{
     width: 25em;
     height: 25em;
     margin: 0;
-    border: 0.03em solid black;
+    border: 0.03em solid rgb(255, 255, 255);
     --grid-template-columns: repeat(16, 1fr);
     --grid-template-rows: repeat(16, 1fr);
     grid-template-columns: var(--grid-template-columns);
@@ -25,7 +27,7 @@ html, body{
 }
 
 .grid{
-    border: 0.03em solid black;
+    border: 0.03em solid rgb(185, 185, 185);
     padding: 0px;
 }
 
