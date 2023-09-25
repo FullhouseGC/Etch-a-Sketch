@@ -24,10 +24,10 @@ html, body{
     --grid-template-rows: repeat(16, 1fr);
     grid-template-columns: var(--grid-template-columns);
     grid-template-rows: var(--grid-template-rows);
+    background-color: rgb(255, 255, 255);
 }
 
 .grid{
-    border: 0.03em solid rgb(185, 185, 185);
     padding: 0px;
 }
 
