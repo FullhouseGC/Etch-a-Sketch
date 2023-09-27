@@ -1,6 +1,9 @@
 let container = document.querySelector('#container');
 var grid = document.getElementsByClassName("grid")
-
+function randomRgb(max) {
+    return Math.floor(Math.random() * max);
+  }
+  
 //Custom grid creation with coloring EventListener
 function userPrompt(){
     container.replaceChildren();
@@ -22,6 +25,14 @@ function userPrompt(){
     }
 container.style.setProperty("--grid-template-columns", `repeat(${prompInt}, 1fr)`);
 container.style.setProperty("--grid-template-rows", `repeat(${prompInt}, 1fr)`);
+}
+
+//Rainbow color
+function rainbow(){
+for(let i = 0; i < grid.length; i++){
+    grid[i].addEventListener("mouseenter", function(){grid[i].style.backgroundColor = `rgb(${randomRgb(255)}, ${randomRgb(255)}, ${randomRgb(255)})`});
+}
+
 }
 
 //Initial 16x 16 grid creation
