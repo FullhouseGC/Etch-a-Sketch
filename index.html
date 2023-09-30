@@ -6,14 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="javascript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="header">Etch-A-Sketch</h1>
+    <h1 id="header">ETCH-A-SKETCH</h1>
     <div id="main">
-        <div id="container">
+        <div id="container"></div>
+    </div>
+    <div id="tools">
+        <div class="rainbowTool">
+            <button id="rainbow" onclick="rainbow()">RAINBOW MODE</button>
+        </div>
+        <div class="valueTool">
+            <input type="range" min="1" max="50" value="50" class="slider" id="myRange" oninput="sliderValue()">
+            <p id="demo"></p>
         </div>
     </div>
-    <button id="button" onclick="userPrompt()">ENTER NUMBER (MAX 100)</button>
-    <button id="rainbow" onclick="rainbow()">RAINBOW MODE</button>
+
 </body>
 </html>
