@@ -6,7 +6,7 @@ html, body{
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
-    font-family: 'Audiowide', cursive;;
+    font-family: 'Audiowide', cursive;
     font-size: 3em;
 }
 
@@ -14,7 +14,9 @@ html, body{
     display: flex;
     justify-content: center;
 }
-
+.grid{
+    border: 1px solid black;
+}
 #container{
     display: grid;
     width: 33em;
@@ -26,13 +28,44 @@ html, body{
     grid-template-columns: var(--grid-template-columns);
     grid-template-rows: var(--grid-template-rows);
     background-color: rgb(255, 255, 255);
-    
 }
 
-#tools{
+#toolsContainer{
     display: flex;
     justify-content: center;
     gap: 3em;
     margin-top: 3em;
 }
 
+.toolsRainbow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toolsValue{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#rainbowButton{
+    font-size: 1em;
+    font-family: 'Audiowide', cursive;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);
+    border: solid white 0.03em;
+}
+
+#rainbowIcon{
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    align-self: center;
+}
+
+#displayValue{
+    font-size: 2em;
+    font-family: 'Audiowide', cursive;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}

@@ -9,19 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <h1 id="header">ETCH-A-SKETCH</h1>
     <div id="main">
         <div id="container"></div>
     </div>
-    <div id="tools">
-        <div class="rainbowTool">
-            <button id="rainbow" onclick="rainbow()">RAINBOW MODE</button>
+    <div id="toolsContainer">
+        <div class="toolsRainbow">
+            <button id="rainbowButton" onclick="rainbow()">RAINBOW MODE</button>
+            <span class="material-symbols-outlined" id="rainbowIcon">looks</span>
         </div>
-        <div class="valueTool">
-            <input type="range" min="1" max="50" value="50" class="slider" id="myRange" oninput="sliderValue()">
-            <p id="demo"></p>
+        <div class="toolsValue">
+            <input type="range" min="1" max="50" value="16" class="slider" id="myRange" oninput="sliderValue()">
+            <p id="displayValue"></p>
         </div>
     </div>
 
